@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patitas Felices | Tienda de mascotas</title>
+  <meta name="description" content="Todo para tu perro o gato: alimentos, juguetes, accesorios y servicios en un solo lugar.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo">🐾 Patitas Felices</a>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-icon" aria-label="Abrir menú">☰</label>
+
+      <nav class="nav">
+        <a href="#productos">Productos</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- INICIO -->
+    <section id="inicio" class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <span class="badge">Perros y gatos</span>
+          <h1>Todo lo que tu mascota necesita, con mucho cariño</h1>
+          <p>Alimentos, juguetes, accesorios y servicios para que tu mejor amigo sea el más feliz de la casa.</p>
+          <div class="hero__buttons">
+            <a href="#productos" class="btn btn--primary">Ver productos</a>
+            <a href="https://wa.me/573000000000" class="btn btn--outline" target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+          </div>
+        </div>
+        <div class="hero__art" aria-hidden="true">
+          <span class="hero__emoji hero__emoji--dog">🐶</span>
+          <span class="hero__emoji hero__emoji--cat">🐱</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTOS -->
+    <section id="productos" class="section">
+      <div class="container">
+        <h2 class="section__title">Productos destacados</h2>
+        <p class="section__subtitle">Lo mejor para su alimentación, juego y descanso.</p>
+
+        <div class="grid grid--4">
+          <article class="card">
+            <div class="card__icon">🍖</div>
+            <h3>Alimento premium</h3>
+            <p>Nutrición balanceada para perros y gatos de todas las edades.</p>
+            <span class="card__price">Desde $45.000</span>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">🎾</div>
+            <h3>Juguetes</h3>
+            <p>Pelotas, cuerdas y rascadores para horas de diversión.</p>
+            <span class="card__price">Desde $12.000</span>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">🛏️</div>
+            <h3>Camas y casitas</h3>
+            <p>Suaves y cómodas para que descansen como reyes.</p>
+            <span class="card__price">Desde $60.000</span>
+          </article>
+
+          <article class="card">
+            <div class="card__icon">🦴</div>
+            <h3>Snacks y premios</h3>
+            <p>Golosinas saludables para entrenar y consentir.</p>
+            <span class="card__price">Desde $8.000</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="section section--alt">
+      <div class="container">
+        <h2 class="section__title">Nuestros servicios</h2>
+        <p class="section__subtitle">Cuidamos de tu mascota como si fuera nuestra.</p>
+
+        <div class="grid grid--3">
+          <article class="service">
+            <span class="service__icon">✂️</span>
+            <h3>Peluquería y baño</h3>
+            <p>Baño, corte y cepillado con productos suaves para su piel.</p>
+          </article>
+
+          <article class="service">
+            <span class="service__icon">🩺</span>
+            <h3>Veterinaria</h3>
+            <p>Consultas, vacunación y desparasitación con profesionales.</p>
+          </article>
+
+          <article class="service">
+            <span class="service__icon">🏠</span>
+            <h3>Guardería</h3>
+            <p>Un lugar seguro y divertido mientras tú no estás.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section">
+      <div class="container">
+        <h2 class="section__title">Contáctanos</h2>
+        <p class="section__subtitle">Estamos listos para ayudarte a ti y a tu peludo.</p>
+
+        <div class="contact">
+          <div class="contact__info">
+            <p><strong>📍 Dirección:</strong><br>Calle 00 # 00-00, Bogotá</p>
+            <p><strong>📞 Teléfono:</strong><br><a href="tel:+573000000000">300 000 0000</a></p>
+            <p><strong>✉️ Correo:</strong><br><a href="mailto:hola@patitasfelices.com">hola@patitasfelices.com</a></p>
+            <p><strong>🕒 Horario:</strong><br>Lunes a sábado: 8:00 a.m. – 7:00 p.m.<br>Domingos: 9:00 a.m. – 2:00 p.m.</p>
+            <a href="https://wa.me/573000000000" class="btn btn--whatsapp" target="_blank" rel="noopener">💬 Escríbenos por WhatsApp</a>
+          </div>
+
+          <form class="form" action="#" method="post">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+
+            <button type="submit" class="btn btn--primary">Enviar mensaje</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <div class="container">
+      <p>🐾 Patitas Felices &copy; 2026. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
